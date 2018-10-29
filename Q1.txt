@@ -1,0 +1,14 @@
+Hash function
+把訊息壓縮，使得資料量變小，並將資料的輸出格式固定下來。
+Example：md5
+
+Cryptographic hash function
+是hash function的一種，是一種單向函式，難以由輸出的結果去回推輸入的資料。
+包含四個特性：
+1. 對於任何一個給定的訊息，它都很容易就能運算出雜湊數值。
+2. 難以由一個已知的雜湊數值，去推算出原始的訊息。
+3. 在不更動雜湊數值的前提下，修改訊息內容是不可行的。
+4. 對於兩個不同的訊息，它不能給與相同的雜湊數值。
+Example:SHA-256
+
+兩者其中一個差別是，Cryptographic hash function具備collision free，在這個特性的前提下，每當H(x)的值等同於H(y)，我們可以放心地認為string x = y。而Hash function不一定具備collision free
